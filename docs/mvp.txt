@@ -19,15 +19,3 @@ build
 fresh public github repo
 
 reddit post
-
-progress bar exoplayer, copy from 4chan swiper
-
-gif use mobile optimised url
-
-default subreddit list
-
-scrcpy
-
-
-next task
-  gif progress bar, copy from 4chan swiper
