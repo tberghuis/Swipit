@@ -7,7 +7,7 @@ reddit, gfycat, giphy, redgifs
 
 ## Download
 
-release 0.1.0 link
+[swipit-v0.1.0.apk](https://github.com/tberghuis/Swipit/releases/download/v0.1.0/swipit-v0.1.0.apk)
 
 ## Screencast
 
