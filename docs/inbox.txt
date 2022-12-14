@@ -47,3 +47,9 @@ fix black screen i first video load
 build warning, room database schema
 
 long press subreddit button, delete confirm dialog
+
+feature android tv support
+  support remote key page swipe
+  build variant, no launcher, launch with adb command from phone, secret app
+
+fastlane f-droid ???
