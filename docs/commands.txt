@@ -1,0 +1,9 @@
+
+
+& "C:\Program Files\mitmproxy\bin\mitmweb.exe"
+
+cd c:\users\tom\desktop\tmp
+
+.\yt-dlp.exe --no-check-certificate --proxy http://localhost:8080 https://www.redgifs.com/watch/unsightlyplaintiveglowworm
+
+

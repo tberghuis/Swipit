@@ -1,0 +1,49 @@
+
+##################
+retire https://github.com/tberghuis/media-swiper-for-reddit-kotlin
+  migrate github issues
+
+read all glide docs
+read exoplayer docs
+
+future,
+  suspend fun network call wrap return data type in Result
+
+feature favorite list
+
+exoplayer docs, authorization header for redgifs domain only???
+
+ support multireddit +
+ showcase sfw subreddits like video memes
+
+if ever wanted to switch to coil see
+https://github.com/coil-kt/coil/issues/606
+
+use lower res gifs for faster loading? embed urls
+
+feature share link
+  add to list / favorites
+
+what to do if subreddit does not exist, crash is ok for mvp
+
+polish UI design
+
+loading spinner fetch more, each swiper url type
+use mobile optimised url, low bandwidth???
+
+future f-droid release
+
+player progress bar
+
+gif progress bar???
+
+glide diskcachestrategy? read docs, run tests
+
+glitching exoplayer surfaceview???
+
+fix black screen i first video load
+  use a spinner???
+
+build warning, room database schema
+
+long press subreddit button, delete confirm dialog

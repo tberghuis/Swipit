@@ -1,0 +1,7 @@
+
+mitmproxy
+  
+ .\yt-dlp.exe --no-check-certificate --proxy http://localhost:8080 https://www.redgifs.com/watch/whisperedgrimyqueenalexandrasbirdwingbutterfly
+
+ https://medium.com/@navyab_66433/mitm-proxy-for-android-emulators-cf4c8e909aac
+ 

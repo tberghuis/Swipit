@@ -1,0 +1,33 @@
+
+
+test multireddit
+
+github readme
+  supported URL format list table
+  https://i.redd.it/xxxxxx.gif
+
+  tech used list
+
+screencast
+
+check other apps f-droid
+
+version
+build
+  github apk release
+
+fresh public github repo
+
+reddit post
+
+progress bar exoplayer, copy from 4chan swiper
+
+gif use mobile optimised url
+
+default subreddit list
+
+scrcpy
+
+
+next task
+  gif progress bar, copy from 4chan swiper
