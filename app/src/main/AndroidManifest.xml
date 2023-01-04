@@ -38,9 +38,9 @@
                 android:value="" />
         </activity>
 
-        <!--        <activity-->
-        <!--            android:name=".tmp.RedgifsActivity"-->
-        <!--            android:exported="true"-->
-        <!--            android:theme="@style/Theme.Swipit" />-->
+        <activity
+            android:name=".tmp.RedgifsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Swipit" />
     </application>
 </manifest>

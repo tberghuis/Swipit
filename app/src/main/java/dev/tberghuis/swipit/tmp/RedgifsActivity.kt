@@ -35,93 +35,9 @@ class RedgifsActivity : ComponentActivity() {
     setContent {
       SwipitTheme {
         Surface(modifier = Modifier.fillMaxSize()) {
-//          RedgifsScreen()
-//          RedgifsPager()
-//          FetchRedgifUrls()
-//          DownloadScreen()
-//          TmpGifsUrls()
-          HardcodePlayer()
+          Text("hello world")
         }
       }
     }
-  }
-}
-
-@Composable
-fun RedgifsScreen() {
-  val vm = hiltViewModel<RedgifsViewModel>()
-  Column {
-    Text("hello redgifs")
-    Button(onClick = {
-      vm.getGifUrl()
-    }) {
-      Text("getGifUrl")
-    }
-    AwaitRedgifUrl()
-  }
-}
-
-@Composable
-fun AwaitRedgifUrl() {
-  val vm = hiltViewModel<RedgifsViewModel>()
-  AwaitDeferred(vm.playerVMC.asyncRedgifUrl) { url ->
-    RedgifsPlayer(url)
-  }
-}
-
-
-@Composable
-fun <T> AwaitDeferred(deferred: Deferred<T>, content: @Composable (T) -> Unit) {
-  var t by remember { mutableStateOf<T?>(null) }
-  if (t != null) {
-    content(t!!)
-  }
-  LaunchedEffect(Unit) {
-    // optional just start async here
-    t = deferred.await()
-  }
-}
-
-@Composable
-fun RedgifsPlayer(redgifUrl: String) {
-  val vm = hiltViewModel<RedgifsViewModel>()
-  val playing by vm.playerVMC.playingStateFlow.collectAsState()
-
-  AndroidView(factory = { context ->
-    PlayerView(context).also {
-      val player = vm.playerVMC.player
-      it.player = player
-      val mi = MediaItem.fromUri(redgifUrl)
-      player.setMediaItem(mi)
-      player.prepare()
-    }
-  }, update = {
-    it.player?.let { player ->
-      when (playing) {
-        true -> {
-          player.play()
-        }
-        false -> {
-          player.pause()
-        }
-      }
-
-    }
-  }, modifier = Modifier
-    .fillMaxWidth()
-    .aspectRatio(16 / 9f)
-  )
-
-  Button(onClick = {
-    logd("play")
-    vm.playerVMC.playingStateFlow.value = true
-  }) {
-    Text("play")
-  }
-  Button(onClick = {
-    logd("pause")
-    vm.playerVMC.playingStateFlow.value = false
-  }) {
-    Text("pause")
   }
 }

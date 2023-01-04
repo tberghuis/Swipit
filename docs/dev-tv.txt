@@ -15,3 +15,5 @@ pause player
 read docs build variant, hidden from launcher
 
 banner drawable
+
+remove .tmp.RedgifsActivity from manifest.xml
