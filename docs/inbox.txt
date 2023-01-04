@@ -53,3 +53,11 @@ feature android tv support
   build variant, no launcher, launch with adb command from phone, secret app
 
 fastlane f-droid ???
+
+
+############
+fresh compose
+fresh android tv
+min changes to fresh compose so runs on tv
+
+subtitle black and white font
