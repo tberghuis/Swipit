@@ -17,3 +17,5 @@ read docs build variant, hidden from launcher
 banner drawable
 
 remove .tmp.RedgifsActivity from manifest.xml
+
+https://stackoverflow.com/questions/70838476/onkeyevent-without-focus-in-jetpack-compose
