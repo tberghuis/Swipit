@@ -55,9 +55,3 @@ feature android tv support
 fastlane f-droid ???
 
 
-############
-fresh compose
-fresh android tv
-min changes to fresh compose so runs on tv
-
-subtitle black and white font

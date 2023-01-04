@@ -4,9 +4,17 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
     <application
         android:name=".SwipitApplication"
         android:allowBackup="true"
+        android:banner="@drawable/finger_swipe_icon"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -18,20 +26,21 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Swipit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
 
-<!--        <activity-->
-<!--            android:name=".tmp.RedgifsActivity"-->
-<!--            android:exported="true"-->
-<!--            android:theme="@style/Theme.Swipit" />-->
+        <!--        <activity-->
+        <!--            android:name=".tmp.RedgifsActivity"-->
+        <!--            android:exported="true"-->
+        <!--            android:theme="@style/Theme.Swipit" />-->
     </application>
 </manifest>

@@ -1,0 +1,17 @@
+############
+fresh compose
+fresh android tv
+min changes to fresh compose so runs on tv
+
+subtitle black and white font
+
+androidx.leanback ???
+read tv docs
+
+first task logd remote key press
+2. programmatically swipe
+pause player
+
+read docs build variant, hidden from launcher
+
+banner drawable
