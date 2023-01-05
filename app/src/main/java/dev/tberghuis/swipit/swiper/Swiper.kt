@@ -5,6 +5,8 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -18,6 +20,8 @@ import dev.tberghuis.swipit.swiper.composables.GlideGifView
 import dev.tberghuis.swipit.swiper.composables.GlideImageWrapper
 import dev.tberghuis.swipit.swiper.composables.PlayerViewWrapper
 import dev.tberghuis.swipit.util.logd
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
@@ -26,6 +30,17 @@ fun Swiper(
   val vm = hiltViewModel<SwiperViewModel>()
   val urlList by vm.swiperUrlListStateFlow.collectAsState(initial = null)
   val pagerState = rememberPagerState()
+
+//  val context = LocalContext.current
+//
+//  val keyCodeFlow = remember(context) {
+//    MutableSharedFlow<Int>().apply {
+//      (context as MainActivity).keyCodeFlow.collect {
+//
+//      }
+//    }
+//  }
+
 
   if (urlList == null) {
     return
@@ -58,34 +73,65 @@ fun Swiper(
 
   // tv remote control pager and player
   val context = LocalContext.current
-  DisposableEffect(context) {
-    (context as MainActivity).handleKeyUp = { keyCode ->
-      logd("handleKeyUp keyCode $keyCode")
+//  DisposableEffect(context) {
+//    (context as MainActivity).keyCodeFlow = keyCodeFlow
+//    onDispose {
+//      (context as MainActivity).keyCodeFlow = null
+//    }
+//  }
+
+  LaunchedEffect(context) {
+    (context as MainActivity).keyCodeFlow.collect { keyCode ->
+      logd("collect: $keyCode")
       when (keyCode) {
-        // up left
-        19, 21 -> {
-          // todo
-          true
-        }
-        // down, right
-        20, 22 -> {
-          // todo
-          true
-        }
-        // ok
-        23 -> {
-          // todo
-          true
+        20, 22 -> { // down, right
+          if (pagerState.currentPage < pagerState.pageCount - 1) {
+            pagerState.scrollToPage(pagerState.currentPage + 1)
+          }
         }
         else -> {
-          false
+
         }
       }
     }
-    onDispose {
-      (context as MainActivity).handleKeyUp = { _ -> false }
-    }
   }
+
+
+//  val context = LocalContext.current
+//  val scope = rememberCoroutineScope()
+//  DisposableEffect(context) {
+//    (context as MainActivity).handleKeyUp = { keyCode ->
+//      logd("handleKeyUp keyCode $keyCode")
+//      when (keyCode) {
+//        // up left
+//        19, 21 -> {
+//          // todo
+//          true
+//        }
+//        // down, right
+//        20, 22 -> {
+//          // todo
+//          if (pagerState.currentPage < pagerState.pageCount - 1) {
+//            scope.launch {
+//              pagerState.scrollToPage(pagerState.currentPage + 1)
+//            }
+//          }
+//          true
+//        }
+//        // ok
+//        23 -> {
+//          // todo
+//          true
+//        }
+//        else -> {
+//          false
+//        }
+//      }
+//    }
+//    onDispose {
+//      (context as MainActivity).handleKeyUp = { _ -> false }
+//    }
+//  }
 
 }
 
