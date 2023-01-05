@@ -25,3 +25,5 @@ next task, left and up key
 https://developer.android.com/training/tv
 
 https://stackoverflow.com/questions/66958260/how-to-outline-text-in-jetpack-compose
+
+make progress bar thicker
