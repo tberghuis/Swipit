@@ -1,0 +1,268 @@
+{
+  "approved_at_utc": null,
+  "subreddit": "funny",
+  "selftext": "",
+  "author_fullname": "t2_zv3n5sh",
+  "saved": false,
+  "mod_reason_title": null,
+  "gilded": 0,
+  "clicked": false,
+  "title": "A fair question from James May.",
+  "link_flair_richtext": [],
+  "subreddit_name_prefixed": "r/funny",
+  "hidden": false,
+  "pwls": 6,
+  "link_flair_css_class": null,
+  "downs": 0,
+  "thumbnail_height": 78,
+  "top_awarded_type": null,
+  "hide_score": false,
+  "name": "t3_1038p8b",
+  "quarantine": false,
+  "link_flair_text_color": "dark",
+  "upvote_ratio": 0.95,
+  "author_flair_background_color": null,
+  "subreddit_type": "public",
+  "ups": 2672,
+  "total_awards_received": 1,
+  "media_embed": {},
+  "thumbnail_width": 140,
+  "author_flair_template_id": null,
+  "is_original_content": false,
+  "user_reports": [],
+  "secure_media": {
+    "reddit_video": {
+      "bitrate_kbps": 800,
+      "fallback_url": "https://v.redd.it/szopnlxl52aa1/DASH_360.mp4?source=fallback",
+      "height": 360,
+      "width": 640,
+      "scrubber_media_url": "https://v.redd.it/szopnlxl52aa1/DASH_96.mp4",
+      "dash_url": "https://v.redd.it/szopnlxl52aa1/DASHPlaylist.mpd?a=1675489007%2CYzE5YWFjNzUxZmZmZTExYjhmMmZjYTcwOTkzOWEwOGZmMmFmMGM0ZTFjZDE4NWZlOWVmZDJjMjBhMWEzMDk2Zg%3D%3D&amp;v=1&amp;f=sd",
+      "duration": 20,
+      "hls_url": "https://v.redd.it/szopnlxl52aa1/HLSPlaylist.m3u8?a=1675489007%2CYjhmYjYyNDcwN2ZkNzZiNjAzOGE2M2IzODBlMTYxMGRiZGVjYTU4MGE1ZDBlODg3ZjdlYzZmNzI0MzRhMjE5Mw%3D%3D&amp;v=1&amp;f=sd",
+      "is_gif": false,
+      "transcoding_status": "completed"
+    }
+  },
+  "is_reddit_media_domain": true,
+  "is_meta": false,
+  "category": null,
+  "secure_media_embed": {},
+  "link_flair_text": null,
+  "can_mod_post": false,
+  "score": 2672,
+  "approved_by": null,
+  "is_created_from_ads_ui": false,
+  "author_premium": false,
+  "thumbnail": "https://b.thumbs.redditmedia.com/KzG6vJw_YobLo_MwVFy0XltLkrlUSN_9_b_WSeDCbaI.jpg",
+  "edited": false,
+  "author_flair_css_class": null,
+  "author_flair_richtext": [],
+  "gildings": {},
+  "post_hint": "hosted:video",
+  "content_categories": null,
+  "is_self": false,
+  "mod_note": null,
+  "created": 1672851756,
+  "link_flair_type": "text",
+  "wls": 6,
+  "removed_by_category": null,
+  "banned_by": null,
+  "author_flair_type": "text",
+  "domain": "v.redd.it",
+  "allow_live_comments": true,
+  "selftext_html": null,
+  "likes": null,
+  "suggested_sort": null,
+  "banned_at_utc": null,
+  "url_overridden_by_dest": "https://v.redd.it/szopnlxl52aa1",
+  "view_count": null,
+  "archived": false,
+  "no_follow": false,
+  "is_crosspostable": true,
+  "pinned": false,
+  "over_18": false,
+  "preview": {
+    "images": [
+      {
+        "source": {
+          "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?format=pjpg&amp;auto=webp&amp;s=b14bc56dff83af368a2c0e82d38df0cf8c8fb70e",
+          "width": 1080,
+          "height": 607
+        },
+        "resolutions": [
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=108&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=0ea6f241f8630dd957ccf462e7fd6ca2bcee0cb8",
+            "width": 108,
+            "height": 60
+          },
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=216&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=f0e77c8977846f67c18b8dc49470886b09249b1a",
+            "width": 216,
+            "height": 121
+          },
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=320&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=0fa69a7f77e478be61b28bcfd1a621d43076557a",
+            "width": 320,
+            "height": 179
+          },
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=640&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=6cab9ed8559cc06d04a3d2113db1ef862fb779cf",
+            "width": 640,
+            "height": 359
+          },
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=960&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=7ceac2241e31f897a3fb6f5329dc738b6d272ad8",
+            "width": 960,
+            "height": 539
+          },
+          {
+            "url": "https://external-preview.redd.it/Yjh6oDMcdcPTUyUi0JSNANzIaMTJxnJw7mocQvPIaz0.png?width=1080&amp;crop=smart&amp;format=pjpg&amp;auto=webp&amp;s=96a15f70257480f3568d6aecf9c1835ab552819f",
+            "width": 1080,
+            "height": 607
+          }
+        ],
+        "variants": {},
+        "id": "dBW5Sg-LqhImGLVEWFF-Sq04WRLlregug4bTI27eRYU"
+      }
+    ],
+    "enabled": false
+  },
+  "all_awardings": [
+    {
+      "giver_coin_reward": null,
+      "subreddit_id": null,
+      "is_new": false,
+      "days_of_drip_extension": null,
+      "coin_price": 125,
+      "id": "award_5f123e3d-4f48-42f4-9c11-e98b566d5897",
+      "penny_donate": null,
+      "award_sub_type": "GLOBAL",
+      "coin_reward": 0,
+      "icon_url": "https://i.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png",
+      "days_of_premium": null,
+      "tiers_by_required_awardings": null,
+      "resized_icons": [
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=16&amp;height=16&amp;auto=webp&amp;s=92932f465d58e4c16b12b6eac4ca07d27e3d11c0",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=32&amp;height=32&amp;auto=webp&amp;s=d11484a208d68a318bf9d4fcf371171a1cb6a7ef",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=48&amp;height=48&amp;auto=webp&amp;s=febdf28b6f39f7da7eb1365325b85e0bb49a9f63",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=64&amp;height=64&amp;auto=webp&amp;s=b4406a2d88bf86fa3dc8a45aacf7e0c7bdccc4fb",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=128&amp;height=128&amp;auto=webp&amp;s=19555b13e3e196b62eeb9160d1ac1d1b372dcb0b",
+          "width": 128,
+          "height": 128
+        }
+      ],
+      "icon_width": 2048,
+      "static_icon_width": 2048,
+      "start_date": null,
+      "is_enabled": true,
+      "awardings_required_to_grant_benefits": null,
+      "description": "When you come across a feel-good thing.",
+      "end_date": null,
+      "sticky_duration_seconds": null,
+      "subreddit_coin_reward": 0,
+      "count": 1,
+      "static_icon_height": 2048,
+      "name": "Wholesome",
+      "resized_static_icons": [
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=16&amp;height=16&amp;auto=webp&amp;s=92932f465d58e4c16b12b6eac4ca07d27e3d11c0",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=32&amp;height=32&amp;auto=webp&amp;s=d11484a208d68a318bf9d4fcf371171a1cb6a7ef",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=48&amp;height=48&amp;auto=webp&amp;s=febdf28b6f39f7da7eb1365325b85e0bb49a9f63",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=64&amp;height=64&amp;auto=webp&amp;s=b4406a2d88bf86fa3dc8a45aacf7e0c7bdccc4fb",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=128&amp;height=128&amp;auto=webp&amp;s=19555b13e3e196b62eeb9160d1ac1d1b372dcb0b",
+          "width": 128,
+          "height": 128
+        }
+      ],
+      "icon_format": null,
+      "icon_height": 2048,
+      "penny_price": null,
+      "award_type": "global",
+      "static_icon_url": "https://i.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png"
+    }
+  ],
+  "awarders": [],
+  "media_only": false,
+  "can_gild": true,
+  "spoiler": false,
+  "locked": false,
+  "author_flair_text": null,
+  "treatment_tags": [],
+  "visited": false,
+  "removed_by": null,
+  "num_reports": null,
+  "distinguished": null,
+  "subreddit_id": "t5_2qh33",
+  "author_is_blocked": false,
+  "mod_reason_by": null,
+  "removal_reason": null,
+  "link_flair_background_color": "",
+  "id": "1038p8b",
+  "is_robot_indexable": true,
+  "report_reasons": null,
+  "author": "JimPalamo",
+  "discussion_type": null,
+  "num_comments": 102,
+  "send_replies": true,
+  "whitelist_status": "all_ads",
+  "contest_mode": false,
+  "mod_reports": [],
+  "author_patreon_flair": false,
+  "author_flair_text_color": null,
+  "permalink": "/r/funny/comments/1038p8b/a_fair_question_from_james_may/",
+  "parent_whitelist_status": "all_ads",
+  "stickied": false,
+  "url": "https://v.redd.it/szopnlxl52aa1",
+  "subreddit_subscribers": 46323675,
+  "created_utc": 1672851756,
+  "num_crossposts": 2,
+  "media": {
+    "reddit_video": {
+      "bitrate_kbps": 800,
+      "fallback_url": "https://v.redd.it/szopnlxl52aa1/DASH_360.mp4?source=fallback",
+      "height": 360,
+      "width": 640,
+      "scrubber_media_url": "https://v.redd.it/szopnlxl52aa1/DASH_96.mp4",
+      "dash_url": "https://v.redd.it/szopnlxl52aa1/DASHPlaylist.mpd?a=1675489007%2CYzE5YWFjNzUxZmZmZTExYjhmMmZjYTcwOTkzOWEwOGZmMmFmMGM0ZTFjZDE4NWZlOWVmZDJjMjBhMWEzMDk2Zg%3D%3D&amp;v=1&amp;f=sd",
+      "duration": 20,
+      "hls_url": "https://v.redd.it/szopnlxl52aa1/HLSPlaylist.m3u8?a=1675489007%2CYjhmYjYyNDcwN2ZkNzZiNjAzOGE2M2IzODBlMTYxMGRiZGVjYTU4MGE1ZDBlODg3ZjdlYzZmNzI0MzRhMjE5Mw%3D%3D&amp;v=1&amp;f=sd",
+      "is_gif": false,
+      "transcoding_status": "completed"
+    }
+  },
+  "is_video": true
+}

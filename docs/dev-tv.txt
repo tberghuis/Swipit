@@ -1,0 +1,35 @@
+############
+fresh compose
+fresh android tv
+min changes to fresh compose so runs on tv
+
+subtitle black and white font
+
+androidx.leanback ???
+read tv docs
+
+first task logd remote key press
+2. programmatically swipe
+OK - pause player
+
+read docs build variant, hidden from launcher
+
+banner drawable
+
+remove .tmp.RedgifsActivity from manifest.xml
+
+https://stackoverflow.com/questions/70838476/onkeyevent-without-focus-in-jetpack-compose
+
+next task, left and up key
+
+https://developer.android.com/training/tv
+
+https://stackoverflow.com/questions/66958260/how-to-outline-text-in-jetpack-compose
+
+make progress bar thicker
+
+title text, do it in a fresh tmp activity
+
+sound reddit video
+https://stackoverflow.com/questions/55294520/how-to-initialise-exoplayer-to-play-dash-mpd-videos
+implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.6'

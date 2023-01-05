@@ -1,19 +1,39 @@
 package dev.tberghuis.swipit.swiper
 
+import android.view.KeyEvent.ACTION_UP
+import android.view.KeyEvent.KEYCODE_DPAD_CENTER
+import android.view.KeyEvent.KEYCODE_DPAD_DOWN
+import android.view.KeyEvent.KEYCODE_DPAD_LEFT
+import android.view.KeyEvent.KEYCODE_DPAD_RIGHT
+import android.view.KeyEvent.KEYCODE_DPAD_UP
+import androidx.compose.foundation.focusable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.onPreviewKeyEvent
+import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.VerticalPager
 import com.google.accompanist.pager.rememberPagerState
+import dev.tberghuis.swipit.MainActivity
 import dev.tberghuis.swipit.data.SuGif
 import dev.tberghuis.swipit.data.SuImage
 import dev.tberghuis.swipit.data.SuVideo
 import dev.tberghuis.swipit.swiper.composables.GlideGifView
 import dev.tberghuis.swipit.swiper.composables.GlideImageWrapper
 import dev.tberghuis.swipit.swiper.composables.PlayerViewWrapper
+import dev.tberghuis.swipit.util.logd
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
@@ -33,7 +53,66 @@ fun Swiper(
     }
   }
 
-  VerticalPager(count = urlList!!.size, state = pagerState) { page ->
+  val scope = rememberCoroutineScope()
+  val focusRequester = remember { FocusRequester() }
+
+  LaunchedEffect(Unit) {
+    focusRequester.requestFocus()
+  }
+
+  VerticalPager(
+    count = urlList!!.size,
+    modifier = Modifier
+      .onPreviewKeyEvent { keyEvent ->
+        // this is bad side effect, prevent crashes due to focusstate bugs
+        focusRequester.requestFocus()
+
+        if (keyEvent.nativeKeyEvent.action != ACTION_UP) {
+          return@onPreviewKeyEvent when (keyEvent.nativeKeyEvent.keyCode) {
+            KEYCODE_DPAD_UP, KEYCODE_DPAD_LEFT, KEYCODE_DPAD_DOWN, KEYCODE_DPAD_RIGHT, KEYCODE_DPAD_CENTER -> {
+              true
+            }
+            else -> false
+          }
+        }
+
+        logd("keyEvent $keyEvent")
+        when (keyEvent.nativeKeyEvent.keyCode) {
+          KEYCODE_DPAD_UP, KEYCODE_DPAD_LEFT -> {
+            logd("KEYCODE_DPAD_UP, KEYCODE_DPAD_LEFT")
+            if (pagerState.currentPage > 0) {
+              scope.launch {
+                pagerState.animateScrollToPage(pagerState.currentPage - 1)
+              }
+            }
+            true
+          }
+          KEYCODE_DPAD_DOWN, KEYCODE_DPAD_RIGHT -> {
+            logd("KEYCODE_DPAD_DOWN, KEYCODE_DPAD_RIGHT")
+            if (pagerState.currentPage < pagerState.pageCount - 1) {
+              scope.launch {
+                pagerState.animateScrollToPage(pagerState.currentPage + 1)
+              }
+            }
+            true
+          }
+          KEYCODE_DPAD_CENTER -> {
+            if (urlList!![pagerState.currentPage] is SuVideo) {
+              vm.playerVmc.playerClick(pagerState.currentPage)
+            }
+            true
+          }
+          else -> false
+        }
+
+      }
+      .focusRequester(focusRequester)
+      .focusable(),
+    state = pagerState,
+//    key = { page ->
+//      urlList!![page].mediaUrl
+//    }
+  ) { page ->
     val swiperUrl = urlList!![page]
 
     when (swiperUrl) {
@@ -52,33 +131,3 @@ fun Swiper(
     }
   }
 }
-
-//@Composable
-//fun KeyboardHandler() {
-//  val context = LocalContext.current
-//  val vm = hiltViewModel<SwiperViewModel>()
-//
-//  // this is poor mans way
-//  // not reusable
-//  // only temporary for dev fetch more f
-//  DisposableEffect(Unit) {
-//    val mainActivity = context as MainActivity
-//    mainActivity.handleKeyUp = { keyCode, event ->
-//      logd("keyCode $keyCode")
-//      logd("event $event")
-//
-////      f=34
-//      if (keyCode == 34) {
-//        logd("34")
-////        vm.fetchMoreSharedFlow.tryEmit(Unit)
-//        vm.swiperUrlListVmc.fetchMore()
-//        true
-//      } else {
-//        false
-//      }
-//    }
-//    onDispose {
-//      mainActivity.handleKeyUp = { _, _ -> false }
-//    }
-//  }
-//}
