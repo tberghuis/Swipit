@@ -1,6 +1,7 @@
 package dev.tberghuis.swipit
 
 import android.os.Bundle
+import android.view.KeyEvent
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,7 +13,7 @@ import dev.tberghuis.swipit.ui.theme.SwipitTheme
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-  var handleKeyUp: (Int, android.view.KeyEvent?) -> Boolean = { _, _ -> false }
+  var handleKeyUp: (Int) -> Boolean = { _ -> false }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
     }
   }
 
-  override fun onKeyUp(keyCode: Int, event: android.view.KeyEvent?): Boolean {
-    return handleKeyUp(keyCode, event) || super.onKeyUp(keyCode, event)
+  override fun onKeyUp(keyCode: Int, event: KeyEvent): Boolean {
+    return handleKeyUp(keyCode) || super.onKeyUp(keyCode, event)
   }
 }
