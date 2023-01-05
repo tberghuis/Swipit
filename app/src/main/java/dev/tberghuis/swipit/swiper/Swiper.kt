@@ -68,7 +68,12 @@ fun Swiper(
         focusRequester.requestFocus()
 
         if (keyEvent.nativeKeyEvent.action != ACTION_UP) {
-          return@onPreviewKeyEvent true
+          return@onPreviewKeyEvent when (keyEvent.nativeKeyEvent.keyCode) {
+            KEYCODE_DPAD_UP, KEYCODE_DPAD_LEFT, KEYCODE_DPAD_DOWN, KEYCODE_DPAD_RIGHT, KEYCODE_DPAD_CENTER -> {
+              true
+            }
+            else -> false
+          }
         }
 
         logd("keyEvent $keyEvent")
