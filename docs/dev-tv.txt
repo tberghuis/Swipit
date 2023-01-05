@@ -29,3 +29,7 @@ https://stackoverflow.com/questions/66958260/how-to-outline-text-in-jetpack-comp
 make progress bar thicker
 
 title text, do it in a fresh tmp activity
+
+sound reddit video
+https://stackoverflow.com/questions/55294520/how-to-initialise-exoplayer-to-play-dash-mpd-videos
+implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.6'
