@@ -21,3 +21,6 @@ remove .tmp.RedgifsActivity from manifest.xml
 https://stackoverflow.com/questions/70838476/onkeyevent-without-focus-in-jetpack-compose
 
 next task, left and up key
+
+https://developer.android.com/training/tv
+
