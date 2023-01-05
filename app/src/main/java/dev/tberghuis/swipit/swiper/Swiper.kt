@@ -1,6 +1,7 @@
 package dev.tberghuis.swipit.swiper
 
 import android.view.KeyEvent.ACTION_UP
+import android.view.KeyEvent.KEYCODE_DPAD_CENTER
 import android.view.KeyEvent.KEYCODE_DPAD_DOWN
 import android.view.KeyEvent.KEYCODE_DPAD_LEFT
 import android.view.KeyEvent.KEYCODE_DPAD_RIGHT
@@ -88,6 +89,10 @@ fun Swiper(
                 pagerState.animateScrollToPage(pagerState.currentPage + 1)
               }
             }
+            true
+          }
+          KEYCODE_DPAD_CENTER -> {
+            vm.playerVmc.playerClick(pagerState.currentPage)
             true
           }
           else -> false
