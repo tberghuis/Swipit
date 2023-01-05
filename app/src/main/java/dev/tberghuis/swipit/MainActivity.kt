@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-  var keyCodeFlow = MutableSharedFlow<Int>()
+//  var keyCodeFlow = MutableSharedFlow<Int>()
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -29,17 +29,19 @@ class MainActivity : ComponentActivity() {
     }
   }
 
-  override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
-    logd("onKeyDown keyCode: $keyCode")
-    return when (keyCode) {
-      // up,down,left,right,ok
-      19, 20, 21, 22, 23 -> {
-        lifecycleScope.launch {
-          keyCodeFlow.emit(keyCode)
-        }
-        true
-      }
-      else -> super.onKeyUp(keyCode, event)
-    }
-  }
+//  override fun onKeyUp(keyCode: Int, event: KeyEvent): Boolean {
+//    logd("onKeyUp keyCode: $keyCode")
+//    return when (keyCode) {
+//      // up,down,left,right,ok
+//      19, 20, 21, 22, 23 -> {
+//        lifecycleScope.launch {
+//          keyCodeFlow.emit(keyCode)
+//        }
+//        true
+//      }
+//      else -> super.onKeyUp(keyCode, event)
+//    }
+//  }
+
+
 }
