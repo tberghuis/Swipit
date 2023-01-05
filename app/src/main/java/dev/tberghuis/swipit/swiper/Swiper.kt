@@ -68,7 +68,7 @@ fun Swiper(
         focusRequester.requestFocus()
 
         if (keyEvent.nativeKeyEvent.action != ACTION_UP) {
-          return@onPreviewKeyEvent false
+          return@onPreviewKeyEvent true
         }
 
         logd("keyEvent $keyEvent")
@@ -92,7 +92,9 @@ fun Swiper(
             true
           }
           KEYCODE_DPAD_CENTER -> {
-            vm.playerVmc.playerClick(pagerState.currentPage)
+            if (urlList!![pagerState.currentPage] is SuVideo) {
+              vm.playerVmc.playerClick(pagerState.currentPage)
+            }
             true
           }
           else -> false
