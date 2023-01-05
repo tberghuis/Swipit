@@ -64,7 +64,7 @@ fun Swiper(
     count = urlList!!.size,
     modifier = Modifier
       .onPreviewKeyEvent { keyEvent ->
-        // this is bad side effect
+        // this is bad side effect, prevent crashes due to focusstate bugs
         focusRequester.requestFocus()
 
         if (keyEvent.nativeKeyEvent.action != ACTION_UP) {
