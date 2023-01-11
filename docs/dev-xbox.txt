@@ -1,0 +1,12 @@
+xbox controller swipe
+
+update github readme google tv remote and xbox controller support
+
+build variant, no launcher, launch local adb from phone
+
+remove tmp activity manifest
+
+
+app launcher hidden problem
+
+push notification launch intent (ie hard code launch app)
