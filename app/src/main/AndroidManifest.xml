@@ -24,7 +24,7 @@
         android:theme="@style/Theme.Swipit"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="dev.tberghuis.swipit.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Swipit">
             <intent-filter>
