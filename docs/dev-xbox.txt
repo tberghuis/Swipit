@@ -16,10 +16,12 @@ LADB does work, use mylists to save commands
   adb connect 192.168.0.59:5555
   adb -s 192.168.0.59:5555 shell am start -n dev.tberghuis.swipit/.MainActivity
 
-next task build variant or flavor
+
 
 google tv focus stuck FAB
 
 cull PushLauncher
 
 pull request LADB share target, or custom url with command param
+
+next task build variant or flavor
