@@ -25,3 +25,4 @@ cull PushLauncher
 pull request LADB share target, or custom url with command param
 
 next task build variant or flavor
+read docs https://developer.android.com/studio/build
