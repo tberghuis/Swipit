@@ -26,3 +26,12 @@ pull request LADB share target, or custom url with command param
 
 next task build variant or flavor
 read docs https://developer.android.com/studio/build
+
+
+  adb shell am start -n dev.tberghuis.swipit.stealth/dev.tberghuis.swipit.MainActivity
+  adb connect 192.168.0.XXX:5555
+  adb -s 192.168.0.XXX:5555 shell am start -n dev.tberghuis.swipit.stealth/dev.tberghuis.swipit.MainActivity
+
+  learn https://developer.android.com/studio/build/manage-manifests
+  so i don't repeat code in flavor manifest xml
+  

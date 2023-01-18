@@ -16,3 +16,4 @@ local.properties
 
 /.idea/deploymentTargetDropDown.xml
 /app/release/
+/app/stealth/release/
