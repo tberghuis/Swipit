@@ -1,13 +1,15 @@
 # Swipit
 
-Swipit is a media viewer for reddit that supports viewing of images, gifs and videos. Add your favourite subreddits and swipe away.
+Swipit is a media viewer for reddit that supports viewing of images, gifs and videos. Add your favourite subreddits and swipe away. Works on Google TV, use remote keys to swipe.
 
 Currently supports media from the following sites:
 reddit, gfycat, giphy, redgifs
 
 ## Download
 
-[swipit-v0.1.0.apk](https://github.com/tberghuis/Swipit/releases/download/v0.1.0/swipit-v0.1.0.apk)
+[APK download](https://github.com/tberghuis/Swipit/releases/download/v0.3.0/app-prod-release.apk)
+
+[stealth APK download](https://github.com/tberghuis/Swipit/releases/download/v0.3.0/app-stealth-release.apk) (no launcher)
 
 ## Screencast
 
