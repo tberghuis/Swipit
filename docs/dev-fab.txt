@@ -1,1 +1,2 @@
 fix focus gets stuck FAB
+problem was LazyColumn

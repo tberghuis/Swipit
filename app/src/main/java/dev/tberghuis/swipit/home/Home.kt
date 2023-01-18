@@ -1,6 +1,7 @@
 package dev.tberghuis.swipit.home
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -61,15 +62,26 @@ fun HomeScreenContent(
 ) {
   val vm = hiltViewModel<HomeViewModel>()
   val subredditList by vm.subredditListFlow.collectAsState(initial = listOf())
-  LazyColumn(
+
+  // focus bug on Google TV if use LazyColumn, should i bother reporting???
+  // not a real prod app, waste of time to report
+  //  LazyColumn(
+  //    contentPadding = PaddingValues(10.dp),
+  //  ) {
+  //    items(subredditList.size) { index ->
+  //      val subreddit = subredditList[index]
+  //    }
+  //  }
+
+  Column(
     modifier = Modifier
       .padding(paddingValues)
       .fillMaxSize(),
-    contentPadding = PaddingValues(10.dp),
+//    contentPadding = PaddingValues(10.dp),
     verticalArrangement = Arrangement.Center
   ) {
-    items(subredditList.size) { index ->
-      val subreddit = subredditList[index]
+
+    subredditList.forEach { subreddit ->
       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
         Button(onClick = {
           navigateSubreddit(subreddit)
